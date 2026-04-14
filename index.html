@@ -382,18 +382,23 @@
       <button id="tabBtnQueue" class="tab-btn" type="button">Action Queue</button>
     </div>
     <div id="tabMapSection" class="panel-section active">
-      <table>
-        <thead>
-          <tr>
-            <th>Cluster</th>
-            <th>Band</th>
-            <th>Listings</th>
-            <th>Median MPI</th>
-            <th>% >= 1</th>
-          </tr>
-        </thead>
-        <tbody id="clusterRows"></tbody>
-      </table>
+      <div class="filter-block">
+        <div class="filter-title">Cluster Ranking</div>
+        <div class="small-table-wrap">
+          <table class="small-table">
+            <thead>
+              <tr>
+                <th>Cluster</th>
+                <th>Band</th>
+                <th>Listings</th>
+                <th>Median MPI</th>
+                <th>% >= 1</th>
+              </tr>
+            </thead>
+            <tbody id="clusterRows"></tbody>
+          </table>
+        </div>
+      </div>
       <div class="filter-block">
         <div class="filter-title">MPI Trend</div>
         <div class="trend-controls">
